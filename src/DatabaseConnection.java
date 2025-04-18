@@ -1,4 +1,7 @@
 // Singleton class for database connection
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 class DatabaseConnection {
     private static DatabaseConnection instance;
     private Connection connection;

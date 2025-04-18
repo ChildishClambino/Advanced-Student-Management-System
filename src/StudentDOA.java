@@ -1,4 +1,11 @@
 // Data Access Object for Student entity
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 class StudentDAO {
     private Connection getConnection() {
         return DatabaseConnection.getInstance().getConnection();
